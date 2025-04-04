@@ -19,6 +19,7 @@ public class Median {
 
     /**
      * Compute the median average of the supplied values.
+     * 
      * @return the median average
      */
     double median() {
@@ -29,7 +30,7 @@ public class Median {
         Arrays.sort(sorted);
         int middle = values.length / 2;
         if (values.length % 2 == 0) {
-            return 0.5 * (sorted[middle] + sorted[middle+1]);
+            return 0.5 * (sorted[middle] + sorted[middle - 1]);
         } else {
             return sorted[middle];
         }
